@@ -1,5 +1,5 @@
 # Snoopy
-
+[![Crates.io](https://img.shields.io/crates/v/snoopy.svg)](https://crates.io/crates/snoopy) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://travis-ci.com/kanishkarj/snoopy.svg?token=jy9kvPoUgCS7spyshyKq&branch=master)](https://travis-ci.com/kanishkarj/snoopy)
 
@@ -11,6 +11,7 @@ A highly configurable multi-threaded packet sniffer and parser build in rust-lan
 * While capturing packets, various configuration parameters can be specified. 
 * Parse Pcap files and print them to console, or extract more verbose information from each packet and store them to JSON file.
 * Multi-threaded parsing of packets.
+* Filter packets while parsing and capturing.
 * Currently supports the following protocols :
   * Ethernet
   * Ipv4
@@ -62,7 +63,7 @@ Ensure that you have `libpcap-dev` (ubuntu) or the corresponding package install
 Run the following commands in the command line inside the folder : 
 
 ```zsh
-cargo install --path .
+cargo install snoopy
 ```
 
 ## Quick-Start
